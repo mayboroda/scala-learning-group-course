@@ -1,0 +1,16 @@
+title: scala-learning-group
+description: Scala intro from programmers
+template:
+  repo: scala-learning-group-template
+  name: scala-learning-group
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
